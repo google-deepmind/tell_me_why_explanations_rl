@@ -1,0 +1,5 @@
+absl-py==1.1.0
+dm-env==1.5
+dm-tree==0.1.7
+numpy==1.23.0
+pycolab==1.2

@@ -1,5 +1,9 @@
 # How to Contribute
 
+We are not planning to actively maintain this library, nor to add features
+contributed by the community. However, if you wish to clarify anything in the
+documentation or installation instructions, you are welcome to send us a PR.
+
 ## Contributor License Agreement
 
 Contributions to this project must be accompanied by a Contributor License
