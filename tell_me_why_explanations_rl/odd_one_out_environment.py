@@ -74,7 +74,7 @@ TEST_REWARD_MULT = 10.  # how big the final trial rewards are
 
 
 def _generate_template(object_name):
-  """Generates a binary shape-template array given a shape name."""
+  """Generate a template image from an object color + texture + shape string."""
   object_color, object_texture, object_type = object_name.split()
   template = np.zeros((UPSAMPLE_SIZE, UPSAMPLE_SIZE))
   half = UPSAMPLE_SIZE // 2
