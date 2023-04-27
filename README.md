@@ -47,9 +47,9 @@ For the confounding experiments, use the following train/test levels:
 
 ```python
 train_levels = ['confounding_color_full', 'confounding_shape_full'
-                'confounding_texture_full', 'confounding_position_full']
+                'confounding_texture_full']
 test_levels = ['deconfounding_color_full', 'deconfounding_shape_full'
-               'deconfounding_texture_full', 'deconfounding_position_full']
+               'deconfounding_texture_full']
 ```
 
 For the meta-learning/experimenting version, use the following train levels:
