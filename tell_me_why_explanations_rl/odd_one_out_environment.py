@@ -1,4 +1,4 @@
-# Copyright 2022 DeepMind Technologies Limited
+# Copyright 2023 DeepMind Technologies Limited
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -338,7 +338,7 @@ class MetaOddOneOutEnvironment(OddOneOutEnvironment):
         *base_spec,
         # instruction
         dm_env.specs.Array(
-            shape=[], dtype=str, name="explanation"),
+            shape=[], dtype=str, name="instruction"),
         )
 
   def action_spec(self):

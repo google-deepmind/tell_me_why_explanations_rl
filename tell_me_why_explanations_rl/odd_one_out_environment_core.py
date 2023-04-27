@@ -1,4 +1,4 @@
-# Copyright 2022 DeepMind Technologies Limited
+# Copyright 2023 DeepMind Technologies Limited
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -245,8 +245,6 @@ class MetaObjectDrape(ObjectDrape):
               logging.info("Transforming: %s -> %s", self.color, other_color)
               self.color = other_color
               updated = [other_color] +  original[1:]
-              updated = " ".join(updated)
-              the_plot["char_to_color_shape"][self.character] = updated
               break
         elif actions == ACTIONS.TRANSFORM_TEXTURE:  # transform texture
           for other_texture in the_plot["extant_attributes"]["texture"]:
@@ -255,8 +253,6 @@ class MetaObjectDrape(ObjectDrape):
                   "Transforming: %s -> %s", self.texture, other_texture)
               self.texture = other_texture
               updated = [original[0], other_texture, original[2]]
-              updated = " ".join(updated)
-              the_plot["char_to_color_shape"][self.character] = updated
               break
         elif actions == ACTIONS.TRANSFORM_SHAPE:  # transform shape
           for other_shape in the_plot["extant_attributes"]["shape"]:
@@ -639,11 +635,6 @@ def main(argv):
             "shape": ["square"],
             "texture": ["solid"],
         })
-    print(game.its_showtime())
-    print(game.the_plot)
-    print(game.play(6))
-    print(game.the_plot)
-    exit()
   else:
     raise ValueError("Unrecognized argument: %s" % episode_type)
 

@@ -56,14 +56,14 @@ For the meta-learning/experimenting version, use the following train levels:
 
 ```python
 train_levels = [
-  'meta_3_easy_color_full', 'meta_3_easy_shape_full'
-  'meta_3_easy_texture_full', 'meta_3_easy_position_full',
-  'meta_3_hard1_color_full', 'meta_3_hard1_shape_full'
-  'meta_3_hard1_texture_full', 'meta_3_hard1_position_full',
-  'meta_3_hard2_color_full', 'meta_3_hard2_shape_full'
-  'meta_3_hard2_texture_full', 'meta_3_hard2_position_full',
-  'meta_3_hard3_color_full', 'meta_3_hard3_shape_full'
-  'meta_3_hard3_texture_full', 'meta_3_hard3_position_full',
+  'meta_3_easy_color_full', 'meta_3_easy_shape_full',
+  'meta_3_easy_texture_full',
+  'meta_3_hard1_color_full', 'meta_3_hard1_shape_full',
+  'meta_3_hard1_texture_full',
+  'meta_3_hard2_color_full', 'meta_3_hard2_shape_full',
+  'meta_3_hard2_texture_full',
+  'meta_3_hard3_color_full', 'meta_3_hard3_shape_full',
+  'meta_3_hard3_texture_full',
 ]
 ```
 
